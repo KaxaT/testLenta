@@ -93,4 +93,20 @@
     [_feedDrawerController closeDrawerAnimated:YES completion:nil];
 }
 
+-(void)showAlertFor:(NSError *)error{
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Connection failture"
+                                  message:error.localizedDescription
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [alert dismissViewControllerAnimated:YES completion:nil];
+
+                         }];
+    [alert addAction:ok];
+    [_feedDrawerController.centerViewController presentViewController:alert animated:YES completion:nil];
+}
 @end

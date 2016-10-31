@@ -10,6 +10,7 @@
 #import "OLNetworkManager.h"
 #import "OLNews.h"
 #import "OLGroupedNews.h"
+#import "OLVCManager.h"
 
 static const int kNumberOfImagesAtCell = 4;
 NSString * const kDataUpdatedNotification = @"dataUpdated";
@@ -32,7 +33,7 @@ NSString * const kDataUpdatedNotification = @"dataUpdated";
             _newsData = [response objectForKey:@"headlines"];
             [[NSNotificationCenter defaultCenter] postNotificationName:kDataUpdatedNotification object:nil];
         }else{
-            //TODO: алерт
+            [VCMANAGER showAlertFor:error];
         }
     }];
 }

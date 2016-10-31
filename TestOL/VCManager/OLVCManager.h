@@ -29,4 +29,6 @@
 - (void)showDetailViewWith:(OLNews*)news andImages:(NSArray*)images;
 //- (void)presentModalViewController:(UIViewController*)viewController;
 - (void)setCenterViewController:(UIViewController *)viewControlle;
+
+-(void)showAlertFor:(NSError*)error;
 @end
