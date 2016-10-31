@@ -22,7 +22,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title_1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-ub-v7J">
                                 <rect key="frame" x="15" y="0.0" width="519" height="128"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="31"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYv-Xd-9YE">
@@ -36,6 +36,12 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUm-jp-dIt" userLabel="onFirst">
+                                <rect key="frame" x="0.0" y="0.0" width="671" height="128"/>
+                                <connections>
+                                    <action selector="onFirst" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PLK-t0-bxn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -43,13 +49,17 @@
                             <constraint firstItem="2hh-ub-v7J" firstAttribute="top" secondItem="WsL-JM-7tJ" secondAttribute="top" id="3lj-Ac-LPe"/>
                             <constraint firstItem="tYv-Xd-9YE" firstAttribute="top" secondItem="WsL-JM-7tJ" secondAttribute="top" id="8bM-8r-nYe"/>
                             <constraint firstItem="tYv-Xd-9YE" firstAttribute="width" secondItem="WsL-JM-7tJ" secondAttribute="height" multiplier="107:128" id="CK5-OU-J2a"/>
+                            <constraint firstItem="zUm-jp-dIt" firstAttribute="leading" secondItem="WsL-JM-7tJ" secondAttribute="leading" id="DzM-IC-3o7"/>
                             <constraint firstAttribute="height" constant="128" id="HVH-qd-5Ug"/>
                             <constraint firstAttribute="bottom" secondItem="2hh-ub-v7J" secondAttribute="bottom" id="Mo6-fB-Ad6"/>
                             <constraint firstItem="tYv-Xd-9YE" firstAttribute="width" secondItem="WsL-JM-7tJ" secondAttribute="height" multiplier="137:128" id="MtR-ZW-G5V"/>
                             <constraint firstItem="tYv-Xd-9YE" firstAttribute="width" secondItem="WsL-JM-7tJ" secondAttribute="height" multiplier="167:128" id="PmK-HZ-oAP"/>
+                            <constraint firstAttribute="trailing" secondItem="zUm-jp-dIt" secondAttribute="trailing" id="RKL-CT-MMc"/>
                             <constraint firstAttribute="bottom" secondItem="tYv-Xd-9YE" secondAttribute="bottom" id="btL-uy-yqa"/>
                             <constraint firstItem="tYv-Xd-9YE" firstAttribute="leading" secondItem="2hh-ub-v7J" secondAttribute="trailing" id="cG1-dZ-aXn"/>
                             <constraint firstAttribute="trailing" secondItem="tYv-Xd-9YE" secondAttribute="trailing" id="gwM-4U-ovW"/>
+                            <constraint firstItem="zUm-jp-dIt" firstAttribute="top" secondItem="WsL-JM-7tJ" secondAttribute="top" id="t4c-Fn-JxW"/>
+                            <constraint firstAttribute="bottom" secondItem="zUm-jp-dIt" secondAttribute="bottom" id="zLs-6b-Bhg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -67,20 +77,27 @@
                                     <constraint firstAttribute="height" constant="60" id="AdN-cN-Ddx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="r9v-7E-3Cs">
                                 <rect key="frame" x="15" y="61" width="651" height="67"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGI-mE-8EY" userLabel="onSecond">
+                                <rect key="frame" x="0.0" y="0.0" width="671" height="128"/>
+                                <connections>
+                                    <action selector="onSecond:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ebL-G5-agO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r9v-7E-3Cs" firstAttribute="top" secondItem="h04-t3-i0d" secondAttribute="bottom" id="0i5-xG-hXr"/>
                             <constraint firstItem="h04-t3-i0d" firstAttribute="top" secondItem="ufL-Yb-qnD" secondAttribute="top" constant="1" id="1EW-QJ-oda"/>
+                            <constraint firstAttribute="bottom" secondItem="YGI-mE-8EY" secondAttribute="bottom" id="3zP-RU-mTM"/>
                             <constraint firstAttribute="trailing" secondItem="r9v-7E-3Cs" secondAttribute="trailing" constant="5" id="45M-J5-aqM"/>
                             <constraint firstAttribute="height" constant="128" id="5Sl-jH-eL1"/>
                             <constraint firstItem="r9v-7E-3Cs" firstAttribute="leading" secondItem="ufL-Yb-qnD" secondAttribute="leading" constant="15" id="6N5-kw-sD9"/>
@@ -89,8 +106,11 @@
                             <constraint firstItem="h04-t3-i0d" firstAttribute="top" secondItem="ufL-Yb-qnD" secondAttribute="top" id="EbP-Of-gIv"/>
                             <constraint firstAttribute="bottom" secondItem="h04-t3-i0d" secondAttribute="bottom" id="Ijw-wO-eii"/>
                             <constraint firstItem="h04-t3-i0d" firstAttribute="leading" secondItem="ufL-Yb-qnD" secondAttribute="leading" id="NXd-zb-HeT"/>
+                            <constraint firstItem="YGI-mE-8EY" firstAttribute="leading" secondItem="ufL-Yb-qnD" secondAttribute="leading" id="UJI-IY-Mes"/>
                             <constraint firstItem="h04-t3-i0d" firstAttribute="leading" secondItem="ufL-Yb-qnD" secondAttribute="leading" constant="15" id="dfD-63-OZi"/>
                             <constraint firstAttribute="bottom" secondItem="r9v-7E-3Cs" secondAttribute="bottom" id="gaO-oi-A5l"/>
+                            <constraint firstAttribute="trailing" secondItem="YGI-mE-8EY" secondAttribute="trailing" id="h1i-NK-wIP"/>
+                            <constraint firstItem="YGI-mE-8EY" firstAttribute="top" secondItem="ufL-Yb-qnD" secondAttribute="top" id="ixI-5U-Z5P"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

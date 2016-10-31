@@ -11,6 +11,7 @@
 #import "OLImageCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "OLGroupedNews.h"
+#import "OLVCManager.h"
 
 NSString * const kImageCellReuseIdentifiler = @"imageCell";
 
@@ -51,5 +52,13 @@ NSString * const kImageCellReuseIdentifiler = @"imageCell";
     [cell.imageView setImageWithURL:[NSURL URLWithString:urlStr]];
     cell.clipsToBounds = YES;
     return cell;
+}
+- (IBAction)onFirst {
+    NSArray *subarray = [_news.imageURLs subarrayWithRange:NSMakeRange(0,2)];
+    [VCMANAGER showDetailViewWith:_news.firstNews andImages:subarray];
+}
+- (IBAction)onSecond:(id)sender {
+    NSArray *subarray = [_news.imageURLs subarrayWithRange:NSMakeRange(1,2)];
+    [VCMANAGER showDetailViewWith:_news.firstNews andImages:subarray];
 }
 @end

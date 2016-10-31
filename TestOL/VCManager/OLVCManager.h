@@ -11,11 +11,12 @@
 #import "OLAppMenu.h"
 
 #define VCMANAGER [OLVCManager sharedInstance]
+@class OLNews;
+
 @interface OLVCManager : NSObject{
     OLAppMenu *_menuVC;
     MMDrawerController *_feedDrawerController;
 }
-
 @property(nonatomic, strong, readonly) UINavigationController *navigationController;
 @property(nonatomic, strong, readonly) UIWindow *keyWindow;
 
@@ -25,7 +26,7 @@
 - (void)showMainScreen;
 - (void)showAboutScreen;
 - (void)showMenu;
-
+- (void)showDetailViewWith:(OLNews*)news andImages:(NSArray*)images;
 //- (void)presentModalViewController:(UIViewController*)viewController;
 - (void)setCenterViewController:(UIViewController *)viewControlle;
 @end

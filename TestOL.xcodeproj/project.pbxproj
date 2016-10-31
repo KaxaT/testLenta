@@ -28,6 +28,8 @@
 		87768B061DC71DC400FEFBAB /* OLImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768B041DC71DC400FEFBAB /* OLImageCell.xib */; };
 		87C6003D1DC7DFC80024B7D5 /* OLGroupedNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C6003C1DC7DFC80024B7D5 /* OLGroupedNews.m */; };
 		87C600401DC7E0050024B7D5 /* OLNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C6003F1DC7E0050024B7D5 /* OLNews.m */; };
+		87C600471DC7F96F0024B7D5 /* OLDetailNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C600451DC7F96F0024B7D5 /* OLDetailNewsVC.m */; };
+		87C600481DC7F96F0024B7D5 /* OLDetailNewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C600461DC7F96F0024B7D5 /* OLDetailNewsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,9 @@
 		87C6003C1DC7DFC80024B7D5 /* OLGroupedNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLGroupedNews.m; path = Model/OLGroupedNews.m; sourceTree = "<group>"; };
 		87C6003E1DC7E0050024B7D5 /* OLNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLNews.h; path = Model/OLNews.h; sourceTree = "<group>"; };
 		87C6003F1DC7E0050024B7D5 /* OLNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLNews.m; path = Model/OLNews.m; sourceTree = "<group>"; };
+		87C600441DC7F96F0024B7D5 /* OLDetailNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLDetailNewsVC.h; path = ViewControlers/detailNews/OLDetailNewsVC.h; sourceTree = "<group>"; };
+		87C600451DC7F96F0024B7D5 /* OLDetailNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLDetailNewsVC.m; path = ViewControlers/detailNews/OLDetailNewsVC.m; sourceTree = "<group>"; };
+		87C600461DC7F96F0024B7D5 /* OLDetailNewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLDetailNewsVC.xib; path = ViewControlers/detailNews/OLDetailNewsVC.xib; sourceTree = "<group>"; };
 		EB2EFAF595FDD58E5AD9699C /* Pods-TestOL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOL/Pods-TestOL.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +107,9 @@
 		87768AAB1DC643F600FEFBAB /* TestOL */ = {
 			isa = PBXGroup;
 			children = (
-				87768AD51DC6618E00FEFBAB /* Managers */,
+				87768AF31DC677BF00FEFBAB /* Data */,
+				87768AD61DC6619800FEFBAB /* Navgation */,
+				87768AD11DC6564B00FEFBAB /* Networking */,
 				87768AC71DC6441900FEFBAB /* ViewControlers */,
 				87768AF71DC689AC00FEFBAB /* Views */,
 				87768AC61DC6440600FEFBAB /* appDelegate */,
@@ -135,6 +142,7 @@
 		87768AC71DC6441900FEFBAB /* ViewControlers */ = {
 			isa = PBXGroup;
 			children = (
+				87C600431DC7F9190024B7D5 /* detailNewsView */,
 				87768ACA1DC6445D00FEFBAB /* about */,
 				87768AC91DC6444E00FEFBAB /* menu */,
 				87768AC81DC6444000FEFBAB /* main */,
@@ -179,16 +187,6 @@
 				87768AD31DC656CA00FEFBAB /* OLNetworkManager.m */,
 			);
 			name = Networking;
-			sourceTree = "<group>";
-		};
-		87768AD51DC6618E00FEFBAB /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				87768AF31DC677BF00FEFBAB /* Data */,
-				87768AD61DC6619800FEFBAB /* Navgation */,
-				87768AD11DC6564B00FEFBAB /* Networking */,
-			);
-			name = Managers;
 			sourceTree = "<group>";
 		};
 		87768AD61DC6619800FEFBAB /* Navgation */ = {
@@ -240,6 +238,16 @@
 				87C6003F1DC7E0050024B7D5 /* OLNews.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		87C600431DC7F9190024B7D5 /* detailNewsView */ = {
+			isa = PBXGroup;
+			children = (
+				87C600441DC7F96F0024B7D5 /* OLDetailNewsVC.h */,
+				87C600451DC7F96F0024B7D5 /* OLDetailNewsVC.m */,
+				87C600461DC7F96F0024B7D5 /* OLDetailNewsVC.xib */,
+			);
+			name = detailNewsView;
 			sourceTree = "<group>";
 		};
 		B1C6FED7525417C56AD1AF51 /* Pods */ = {
@@ -326,6 +334,7 @@
 				87768AF21DC66AD600FEFBAB /* OLAboutVC.xib in Resources */,
 				87768AED1DC664C300FEFBAB /* OLMainVC.xib in Resources */,
 				87768AE81DC664A300FEFBAB /* OLAppMenu.xib in Resources */,
+				87C600481DC7F96F0024B7D5 /* OLDetailNewsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87768AFB1DC68A0500FEFBAB /* OLNewsTableCell.m in Sources */,
+				87C600471DC7F96F0024B7D5 /* OLDetailNewsVC.m in Sources */,
 				87768AB11DC643F600FEFBAB /* AppDelegate.m in Sources */,
 				87C600401DC7E0050024B7D5 /* OLNews.m in Sources */,
 				87768AD91DC661DB00FEFBAB /* OLVCManager.m in Sources */,
@@ -503,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idontknown.TestOL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -515,6 +526,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = idontknown.TestOL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

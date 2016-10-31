@@ -9,6 +9,7 @@
 #import "OLVCManager.h"
 #import "OLMainVC.h"
 #import "OLAboutVC.h"
+#import "OLDetailNewsVC.h"
 
 @implementation OLVCManager
 
@@ -60,10 +61,17 @@
     [self setCenterViewController:viewController];
 }
 
-//- (void)presentModalViewController:(UIViewController *)viewController {
-//    [_navigationController presentViewController:viewController animated:YES completion:nil];
-//}
+-(void)showDetailViewWith:(OLNews*)news andImages:(NSArray *)images{
+    OLDetailNewsVC *viewController = [OLDetailNewsVC detailNewsVCWithNews:news andImages:images];
+    [self presentModalViewController:viewController];
 
+}
+
+- (void)presentModalViewController:(UIViewController *)viewController {
+    [_navigationController presentViewController:viewController animated:YES completion:nil];
+}
+- (void)modalDidDisappear {
+}
 - (void)showMenu {
     if (_feedDrawerController.openSide == MMDrawerSideNone) {
         [_feedDrawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];

@@ -51,7 +51,7 @@ NSString * const kDataUpdatedNotification = @"dataUpdated";
     OLGroupedNews *result = nil;
     if(newsCursor <= _newsData.count){
         first = [self makeReflowNewsWithCursor:newsCursor];
-        second = [self makeReflowNewsWithCursor:newsCursor];;
+        second = [self makeReflowNewsWithCursor:newsCursor+1];;
     }else{
         first = [self makeReflowNewsWithCursor:newsCursor];
     }
