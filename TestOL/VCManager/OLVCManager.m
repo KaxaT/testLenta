@@ -61,7 +61,7 @@
     [self setCenterViewController:viewController];
 }
 
--(void)showDetailViewWith:(OLNews*)news andImages:(NSArray *)images{
+- (void)showDetailViewWith:(OLNews*)news andImages:(NSArray *)images{
     OLDetailNewsVC *viewController = [OLDetailNewsVC detailNewsVCWithNews:news andImages:images];
     [self presentModalViewController:viewController];
 
@@ -70,27 +70,13 @@
 - (void)presentModalViewController:(UIViewController *)viewController {
     [_navigationController presentViewController:viewController animated:YES completion:nil];
 }
-- (void)modalDidDisappear {
-}
+
 - (void)showMenu {
     if (_feedDrawerController.openSide == MMDrawerSideNone) {
         [_feedDrawerController openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
     } else {
         [_feedDrawerController closeDrawerAnimated:YES completion:nil];
     }
-}
-
-#pragma mark - Helpers
-
-- (void)setCenterViewController:(UIViewController *)viewController {
-    [_navigationController setViewControllers:@[viewController] animated:YES];
-    [_feedDrawerController.centerViewController.view setAlpha:1.0f];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"MSRViewControllerOpened" object:viewController];
-    [self slideOutMenu];
-}
-
-- (void)slideOutMenu{
-    [_feedDrawerController closeDrawerAnimated:YES completion:nil];
 }
 
 -(void)showAlertFor:(NSError *)error{
@@ -109,4 +95,19 @@
     [alert addAction:ok];
     [_feedDrawerController.centerViewController presentViewController:alert animated:YES completion:nil];
 }
+
+#pragma mark - Helpers
+
+- (void)setCenterViewController:(UIViewController *)viewController {
+    [_navigationController setViewControllers:@[viewController] animated:YES];
+    [_feedDrawerController.centerViewController.view setAlpha:1.0f];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MSRViewControllerOpened" object:viewController];
+    [self slideOutMenu];
+}
+
+- (void)slideOutMenu{
+    [_feedDrawerController closeDrawerAnimated:YES completion:nil];
+}
+
+
 @end
