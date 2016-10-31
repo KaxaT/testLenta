@@ -39,7 +39,7 @@
 - (void) requestListWithCompletion:(OLResponseBlock)completion
 {
     [self GET:@"/lists/latest" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        //no neded
+
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completion(responseObject, nil);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

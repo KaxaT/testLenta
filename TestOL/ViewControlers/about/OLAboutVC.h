@@ -12,8 +12,6 @@
 
 }
 
-
-
 + (instancetype)viewControllerFromDefaultNib;
 
 @end

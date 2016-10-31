@@ -25,10 +25,7 @@
 }
 
 - (void)initializeWithDefaultController {
-    //init window
     _keyWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-
-    //init navigation
     _navigationController = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
     [_navigationController setNavigationBarHidden:YES];
     _menuVC = [[OLAppMenu alloc] init];
