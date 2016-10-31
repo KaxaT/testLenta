@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38208C6E207EA9AF29BF8C07 /* libPods-TestOL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C753EFB8491770AF849E170 /* libPods-TestOL.a */; };
+		87768AAE1DC643F600FEFBAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AAD1DC643F600FEFBAB /* main.m */; };
+		87768AB11DC643F600FEFBAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AB01DC643F600FEFBAB /* AppDelegate.m */; };
+		87768ABA1DC643F600FEFBAB /* TestOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87768AB81DC643F600FEFBAB /* TestOL.xcdatamodeld */; };
+		87768ABC1DC643F600FEFBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87768ABB1DC643F600FEFBAB /* Assets.xcassets */; };
+		87768ABF1DC643F600FEFBAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87768ABD1DC643F600FEFBAB /* LaunchScreen.storyboard */; };
+		87768AD41DC656CA00FEFBAB /* OLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AD31DC656CA00FEFBAB /* OLNetworkManager.m */; };
+		87768AD91DC661DB00FEFBAB /* OLVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AD81DC661DB00FEFBAB /* OLVCManager.m */; };
+		87768AE71DC664A300FEFBAB /* OLAppMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AE51DC664A300FEFBAB /* OLAppMenu.m */; };
+		87768AE81DC664A300FEFBAB /* OLAppMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768AE61DC664A300FEFBAB /* OLAppMenu.xib */; };
+		87768AEC1DC664C300FEFBAB /* OLMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AEA1DC664C300FEFBAB /* OLMainVC.m */; };
+		87768AED1DC664C300FEFBAB /* OLMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768AEB1DC664C300FEFBAB /* OLMainVC.xib */; };
+		87768AF11DC66AD600FEFBAB /* OLAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AEF1DC66AD600FEFBAB /* OLAboutVC.m */; };
+		87768AF21DC66AD600FEFBAB /* OLAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768AF01DC66AD600FEFBAB /* OLAboutVC.xib */; };
+		87768AF61DC6780900FEFBAB /* OLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AF51DC6780900FEFBAB /* OLDataManager.m */; };
+		87768AFB1DC68A0500FEFBAB /* OLNewsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768AF91DC68A0500FEFBAB /* OLNewsTableCell.m */; };
+		87768AFC1DC68A0500FEFBAB /* OLNewsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768AFA1DC68A0500FEFBAB /* OLNewsTableCell.xib */; };
+		87768B051DC71DC400FEFBAB /* OLImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87768B031DC71DC400FEFBAB /* OLImageCell.m */; };
+		87768B061DC71DC400FEFBAB /* OLImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87768B041DC71DC400FEFBAB /* OLImageCell.xib */; };
+		87C6003D1DC7DFC80024B7D5 /* OLGroupedNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C6003C1DC7DFC80024B7D5 /* OLGroupedNews.m */; };
+		87C600401DC7E0050024B7D5 /* OLNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C6003F1DC7E0050024B7D5 /* OLNews.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A3073D2FB9C4CE862C12364 /* Pods-TestOL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOL.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOL/Pods-TestOL.release.xcconfig"; sourceTree = "<group>"; };
+		7C753EFB8491770AF849E170 /* libPods-TestOL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87768AA91DC643F600FEFBAB /* TestOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87768AAD1DC643F600FEFBAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87768AAF1DC643F600FEFBAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87768AB01DC643F600FEFBAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87768AB91DC643F600FEFBAB /* TestOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestOL.xcdatamodel; sourceTree = "<group>"; };
+		87768ABB1DC643F600FEFBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87768ABE1DC643F600FEFBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87768AC01DC643F600FEFBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87768AD21DC656CA00FEFBAB /* OLNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLNetworkManager.h; path = Network/OLNetworkManager.h; sourceTree = "<group>"; };
+		87768AD31DC656CA00FEFBAB /* OLNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLNetworkManager.m; path = Network/OLNetworkManager.m; sourceTree = "<group>"; };
+		87768AD71DC661DB00FEFBAB /* OLVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLVCManager.h; path = VCManager/OLVCManager.h; sourceTree = "<group>"; };
+		87768AD81DC661DB00FEFBAB /* OLVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLVCManager.m; path = VCManager/OLVCManager.m; sourceTree = "<group>"; };
+		87768AE41DC664A300FEFBAB /* OLAppMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLAppMenu.h; path = ViewControlers/appMenu/OLAppMenu.h; sourceTree = "<group>"; };
+		87768AE51DC664A300FEFBAB /* OLAppMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLAppMenu.m; path = ViewControlers/appMenu/OLAppMenu.m; sourceTree = "<group>"; };
+		87768AE61DC664A300FEFBAB /* OLAppMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLAppMenu.xib; path = ViewControlers/appMenu/OLAppMenu.xib; sourceTree = "<group>"; };
+		87768AE91DC664C200FEFBAB /* OLMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLMainVC.h; path = ViewControlers/mainVC/OLMainVC.h; sourceTree = "<group>"; };
+		87768AEA1DC664C300FEFBAB /* OLMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLMainVC.m; path = ViewControlers/mainVC/OLMainVC.m; sourceTree = "<group>"; };
+		87768AEB1DC664C300FEFBAB /* OLMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLMainVC.xib; path = ViewControlers/mainVC/OLMainVC.xib; sourceTree = "<group>"; };
+		87768AEE1DC66AD600FEFBAB /* OLAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLAboutVC.h; path = ViewControlers/about/OLAboutVC.h; sourceTree = "<group>"; };
+		87768AEF1DC66AD600FEFBAB /* OLAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLAboutVC.m; path = ViewControlers/about/OLAboutVC.m; sourceTree = "<group>"; };
+		87768AF01DC66AD600FEFBAB /* OLAboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLAboutVC.xib; path = ViewControlers/about/OLAboutVC.xib; sourceTree = "<group>"; };
+		87768AF41DC6780900FEFBAB /* OLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLDataManager.h; path = DataManger/OLDataManager.h; sourceTree = "<group>"; };
+		87768AF51DC6780900FEFBAB /* OLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLDataManager.m; path = DataManger/OLDataManager.m; sourceTree = "<group>"; };
+		87768AF81DC68A0500FEFBAB /* OLNewsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLNewsTableCell.h; path = Views/NewsCell/OLNewsTableCell.h; sourceTree = "<group>"; };
+		87768AF91DC68A0500FEFBAB /* OLNewsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLNewsTableCell.m; path = Views/NewsCell/OLNewsTableCell.m; sourceTree = "<group>"; };
+		87768AFA1DC68A0500FEFBAB /* OLNewsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLNewsTableCell.xib; path = Views/NewsCell/OLNewsTableCell.xib; sourceTree = "<group>"; };
+		87768B021DC71DC400FEFBAB /* OLImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLImageCell.h; path = Views/imageCell/OLImageCell.h; sourceTree = "<group>"; };
+		87768B031DC71DC400FEFBAB /* OLImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLImageCell.m; path = Views/imageCell/OLImageCell.m; sourceTree = "<group>"; };
+		87768B041DC71DC400FEFBAB /* OLImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OLImageCell.xib; path = Views/imageCell/OLImageCell.xib; sourceTree = "<group>"; };
+		87C6003B1DC7DFC80024B7D5 /* OLGroupedNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLGroupedNews.h; path = Model/OLGroupedNews.h; sourceTree = "<group>"; };
+		87C6003C1DC7DFC80024B7D5 /* OLGroupedNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLGroupedNews.m; path = Model/OLGroupedNews.m; sourceTree = "<group>"; };
+		87C6003E1DC7E0050024B7D5 /* OLNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLNews.h; path = Model/OLNews.h; sourceTree = "<group>"; };
+		87C6003F1DC7E0050024B7D5 /* OLNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLNews.m; path = Model/OLNews.m; sourceTree = "<group>"; };
+		EB2EFAF595FDD58E5AD9699C /* Pods-TestOL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOL/Pods-TestOL.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87768AA61DC643F600FEFBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38208C6E207EA9AF29BF8C07 /* libPods-TestOL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87768AA01DC643F600FEFBAB = {
+			isa = PBXGroup;
+			children = (
+				87768AAB1DC643F600FEFBAB /* TestOL */,
+				87768AAA1DC643F600FEFBAB /* Products */,
+				B1C6FED7525417C56AD1AF51 /* Pods */,
+				E034A95B273534CB560EA337 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87768AAA1DC643F600FEFBAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87768AA91DC643F600FEFBAB /* TestOL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87768AAB1DC643F600FEFBAB /* TestOL */ = {
+			isa = PBXGroup;
+			children = (
+				87768AD51DC6618E00FEFBAB /* Managers */,
+				87768AC71DC6441900FEFBAB /* ViewControlers */,
+				87768AF71DC689AC00FEFBAB /* Views */,
+				87768AC61DC6440600FEFBAB /* appDelegate */,
+				87768ABB1DC643F600FEFBAB /* Assets.xcassets */,
+				87768ABD1DC643F600FEFBAB /* LaunchScreen.storyboard */,
+				87768AC01DC643F600FEFBAB /* Info.plist */,
+				87768AB81DC643F600FEFBAB /* TestOL.xcdatamodeld */,
+				87768AAC1DC643F600FEFBAB /* Supporting Files */,
+			);
+			path = TestOL;
+			sourceTree = "<group>";
+		};
+		87768AAC1DC643F600FEFBAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87768AAD1DC643F600FEFBAB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87768AC61DC6440600FEFBAB /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87768AAF1DC643F600FEFBAB /* AppDelegate.h */,
+				87768AB01DC643F600FEFBAB /* AppDelegate.m */,
+			);
+			name = appDelegate;
+			sourceTree = "<group>";
+		};
+		87768AC71DC6441900FEFBAB /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				87768ACA1DC6445D00FEFBAB /* about */,
+				87768AC91DC6444E00FEFBAB /* menu */,
+				87768AC81DC6444000FEFBAB /* main */,
+			);
+			name = ViewControlers;
+			sourceTree = "<group>";
+		};
+		87768AC81DC6444000FEFBAB /* main */ = {
+			isa = PBXGroup;
+			children = (
+				87768AE91DC664C200FEFBAB /* OLMainVC.h */,
+				87768AEA1DC664C300FEFBAB /* OLMainVC.m */,
+				87768AEB1DC664C300FEFBAB /* OLMainVC.xib */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		87768AC91DC6444E00FEFBAB /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				87768AE41DC664A300FEFBAB /* OLAppMenu.h */,
+				87768AE51DC664A300FEFBAB /* OLAppMenu.m */,
+				87768AE61DC664A300FEFBAB /* OLAppMenu.xib */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		87768ACA1DC6445D00FEFBAB /* about */ = {
+			isa = PBXGroup;
+			children = (
+				87768AEE1DC66AD600FEFBAB /* OLAboutVC.h */,
+				87768AEF1DC66AD600FEFBAB /* OLAboutVC.m */,
+				87768AF01DC66AD600FEFBAB /* OLAboutVC.xib */,
+			);
+			name = about;
+			sourceTree = "<group>";
+		};
+		87768AD11DC6564B00FEFBAB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				87768AD21DC656CA00FEFBAB /* OLNetworkManager.h */,
+				87768AD31DC656CA00FEFBAB /* OLNetworkManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		87768AD51DC6618E00FEFBAB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				87768AF31DC677BF00FEFBAB /* Data */,
+				87768AD61DC6619800FEFBAB /* Navgation */,
+				87768AD11DC6564B00FEFBAB /* Networking */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		87768AD61DC6619800FEFBAB /* Navgation */ = {
+			isa = PBXGroup;
+			children = (
+				87768AD71DC661DB00FEFBAB /* OLVCManager.h */,
+				87768AD81DC661DB00FEFBAB /* OLVCManager.m */,
+			);
+			name = Navgation;
+			sourceTree = "<group>";
+		};
+		87768AF31DC677BF00FEFBAB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				87C600421DC7E12F0024B7D5 /* Model */,
+				87C600411DC7E1210024B7D5 /* Manager */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		87768AF71DC689AC00FEFBAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87768B021DC71DC400FEFBAB /* OLImageCell.h */,
+				87768B031DC71DC400FEFBAB /* OLImageCell.m */,
+				87768B041DC71DC400FEFBAB /* OLImageCell.xib */,
+				87768AF81DC68A0500FEFBAB /* OLNewsTableCell.h */,
+				87768AF91DC68A0500FEFBAB /* OLNewsTableCell.m */,
+				87768AFA1DC68A0500FEFBAB /* OLNewsTableCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		87C600411DC7E1210024B7D5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				87768AF41DC6780900FEFBAB /* OLDataManager.h */,
+				87768AF51DC6780900FEFBAB /* OLDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		87C600421DC7E12F0024B7D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87C6003B1DC7DFC80024B7D5 /* OLGroupedNews.h */,
+				87C6003C1DC7DFC80024B7D5 /* OLGroupedNews.m */,
+				87C6003E1DC7E0050024B7D5 /* OLNews.h */,
+				87C6003F1DC7E0050024B7D5 /* OLNews.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1C6FED7525417C56AD1AF51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2EFAF595FDD58E5AD9699C /* Pods-TestOL.debug.xcconfig */,
+				0A3073D2FB9C4CE862C12364 /* Pods-TestOL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E034A95B273534CB560EA337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C753EFB8491770AF849E170 /* libPods-TestOL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87768AA81DC643F600FEFBAB /* TestOL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87768AC31DC643F600FEFBAB /* Build configuration list for PBXNativeTarget "TestOL" */;
+			buildPhases = (
+				0F16AE34A20829BADE76A6C4 /* [CP] Check Pods Manifest.lock */,
+				87768AA51DC643F600FEFBAB /* Sources */,
+				87768AA61DC643F600FEFBAB /* Frameworks */,
+				87768AA71DC643F600FEFBAB /* Resources */,
+				137864EA355F1F998C8497F6 /* [CP] Embed Pods Frameworks */,
+				B74F1270A748028C05B55880 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestOL;
+			productName = TestOL;
+			productReference = 87768AA91DC643F600FEFBAB /* TestOL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87768AA11DC643F600FEFBAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = testOL;
+				TargetAttributes = {
+					87768AA81DC643F600FEFBAB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 87768AA41DC643F600FEFBAB /* Build configuration list for PBXProject "TestOL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87768AA01DC643F600FEFBAB;
+			productRefGroup = 87768AAA1DC643F600FEFBAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87768AA81DC643F600FEFBAB /* TestOL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87768AA71DC643F600FEFBAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87768B061DC71DC400FEFBAB /* OLImageCell.xib in Resources */,
+				87768ABF1DC643F600FEFBAB /* LaunchScreen.storyboard in Resources */,
+				87768ABC1DC643F600FEFBAB /* Assets.xcassets in Resources */,
+				87768AFC1DC68A0500FEFBAB /* OLNewsTableCell.xib in Resources */,
+				87768AF21DC66AD600FEFBAB /* OLAboutVC.xib in Resources */,
+				87768AED1DC664C300FEFBAB /* OLMainVC.xib in Resources */,
+				87768AE81DC664A300FEFBAB /* OLAppMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F16AE34A20829BADE76A6C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		137864EA355F1F998C8497F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOL/Pods-TestOL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B74F1270A748028C05B55880 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOL/Pods-TestOL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87768AA51DC643F600FEFBAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87768AFB1DC68A0500FEFBAB /* OLNewsTableCell.m in Sources */,
+				87768AB11DC643F600FEFBAB /* AppDelegate.m in Sources */,
+				87C600401DC7E0050024B7D5 /* OLNews.m in Sources */,
+				87768AD91DC661DB00FEFBAB /* OLVCManager.m in Sources */,
+				87768B051DC71DC400FEFBAB /* OLImageCell.m in Sources */,
+				87768ABA1DC643F600FEFBAB /* TestOL.xcdatamodeld in Sources */,
+				87768AEC1DC664C300FEFBAB /* OLMainVC.m in Sources */,
+				87C6003D1DC7DFC80024B7D5 /* OLGroupedNews.m in Sources */,
+				87768AD41DC656CA00FEFBAB /* OLNetworkManager.m in Sources */,
+				87768AF11DC66AD600FEFBAB /* OLAboutVC.m in Sources */,
+				87768AF61DC6780900FEFBAB /* OLDataManager.m in Sources */,
+				87768AAE1DC643F600FEFBAB /* main.m in Sources */,
+				87768AE71DC664A300FEFBAB /* OLAppMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87768ABD1DC643F600FEFBAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87768ABE1DC643F600FEFBAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87768AC11DC643F600FEFBAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87768AC21DC643F600FEFBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87768AC41DC643F600FEFBAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2EFAF595FDD58E5AD9699C /* Pods-TestOL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestOL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idontknown.TestOL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87768AC51DC643F600FEFBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3073D2FB9C4CE862C12364 /* Pods-TestOL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestOL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = idontknown.TestOL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87768AA41DC643F600FEFBAB /* Build configuration list for PBXProject "TestOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87768AC11DC643F600FEFBAB /* Debug */,
+				87768AC21DC643F600FEFBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87768AC31DC643F600FEFBAB /* Build configuration list for PBXNativeTarget "TestOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87768AC41DC643F600FEFBAB /* Debug */,
+				87768AC51DC643F600FEFBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87768AB81DC643F600FEFBAB /* TestOL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87768AB91DC643F600FEFBAB /* TestOL.xcdatamodel */,
+			);
+			currentVersion = 87768AB91DC643F600FEFBAB /* TestOL.xcdatamodel */;
+			path = TestOL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 87768AA11DC643F600FEFBAB /* Project object */;
+}
